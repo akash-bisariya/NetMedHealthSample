@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rlRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_pad_left_medicine"
+        android:paddingBottom="@dimen/dimen_pad_left_medicine"
+        android:paddingTop="5dp"
+        android:background="@android:color/white">
+
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/tvMedicineBrandName"
+            android:id="@+id/item_count"
+            android:background="#67B4BF"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvMedicineBrandName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_count"
+            android:ellipsize="end"
+            android:text="klsdnfkndskfnfknkdngkdfn"
+            android:textColor="@android:color/black"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/tvMedicineBrandName"
+            android:id="@+id/tvCompanyName"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_count"
+            android:maxLines="2"
+            android:text="Company"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvPriceText"
+            app:layout_constraintTop_toBottomOf="@id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Price : "
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="1212"
+            app:layout_constraintLeft_toRightOf="@id/tvPriceText"
+            android:paddingLeft="@dimen/dimen_pad_left_medicine"
+            android:textColor="@android:color/darker_gray"
+            android:paddingStart="@dimen/dimen_pad_left_medicine"/>
+
+</android.support.constraint.ConstraintLayout>

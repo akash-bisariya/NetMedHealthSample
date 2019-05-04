@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NetMedsHealth</string>
+    <string name="txt_cart">Following items are waiting for the checkout :-</string>
+    <string name="txt_checkout">Checkout</string>
+    <string name="txt_my_cart">My Cart</string>
+    <string name="txt_medicine_detail">Medicine Detail</string>
+    <string name="txt_no_cart_items">There are no items in your cart.</string>
+</resources>

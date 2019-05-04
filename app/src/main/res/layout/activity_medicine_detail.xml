@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#67B4BF"
+            app:titleTextColor="@android:color/white"
+            android:minHeight="@android:dimen/notification_large_icon_height">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/dimen_search_pad"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    app:layout_constraintLeft_toRightOf="@id/iv_back"
+                    android:text="@string/txt_medicine_detail"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:id="@+id/iv_back"
+                    android:src="@drawable/ic_arrow_back_white_24dp"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@id/btn_add_toCart">
+
+        <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.MedicineDetailScreen.MedicineDetailActivity">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="ddd"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:id="@+id/tv_brand_name"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="aaa"
+                      app:layout_constraintTop_toBottomOf="@id/tv_brand_name"
+                      android:id="@+id/tv_generic_name"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="aaaaaa"
+                      app:layout_constraintTop_toBottomOf="@id/tv_generic_name"
+                      android:id="@+id/tv_company"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="aaaaaaaaa"
+                      app:layout_constraintTop_toBottomOf="@id/tv_company"
+                      android:id="@+id/tv_price"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="cccc"
+                      app:layout_constraintTop_toBottomOf="@id/tv_company"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:id="@+id/tv_drug_nature"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="zzz"
+                      android:padding="@dimen/dimen_search_pad"
+                      app:layout_constraintTop_toBottomOf="@id/tv_drug_nature"
+                      android:id="@+id/tv_drug_type"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="qqq"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/tv_drug_nature"
+                      android:id="@+id/tv_quantity_available"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="mmmmmmmmmmmm"
+                      app:layout_constraintTop_toBottomOf="@id/tv_quantity_available"
+                      android:id="@+id/tv_created_date"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="iiiiiiiiiiiiiiiiii"
+                      android:padding="@dimen/dimen_search_pad"
+                      app:layout_constraintTop_toBottomOf="@id/tv_created_date"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:id="@+id/tv_discount"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="jgjhgjhgjhgjg"
+                      app:layout_constraintTop_toBottomOf="@id/tv_created_date"
+                      android:id="@+id/tv_max_quantity"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="vvvjhjhvhjvjhvhhfhfhffffhfhfhfhfhfhfhfhgfghfghfghfghfghfghfffhfv"
+                      app:layout_constraintLeft_toRightOf="@id/tv_max_quantity"
+                      app:layout_constraintTop_toBottomOf="@id/tv_discount"
+                      android:maxLines="2"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:id="@+id/tv_generic_dosage"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="dsfdfdfdfdf"
+                      app:layout_constraintTop_toBottomOf="@id/tv_generic_dosage"
+                      android:id="@+id/tv_cims_category"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="dsfdsfdsfsd"
+                      app:layout_constraintTop_toBottomOf="@id/tv_cims_category"
+                      android:id="@+id/tv_cimssub_category"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/dimen_search_pad"
+                      android:text="dsfdsfdsfsd"
+                      app:layout_constraintTop_toBottomOf="@id/tv_cimssub_category"
+                      android:id="@+id/tv_clasification"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="dsfdsfdsfsd"
+                      android:padding="@dimen/dimen_search_pad"
+                      app:layout_constraintTop_toBottomOf="@id/tv_clasification"
+                      android:id="@+id/tv_category"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_search_pad"
+            android:text="Add to Cart"
+            android:background="#67B4BF"
+            android:id="@+id/btn_add_toCart"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

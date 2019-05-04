@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_pad_left_medicine">15dp</dimen>
+    <dimen name="dimen_search_pad">10dp</dimen>
+    <dimen name="dimen_cart_text_size">18sp</dimen>
+</resources>
